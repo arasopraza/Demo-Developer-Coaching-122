@@ -3,13 +3,6 @@ const routes = (handler) => [
     method: 'POST',
     path: '/authentications',
     handler: handler.postAuthenticationHandler,
-    config: {
-      plugins: {
-        hapiAclAuth: {
-         secure: false
-        }
-      }
-    }
   },
   {
     method: 'PUT',
